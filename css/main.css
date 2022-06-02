@@ -32,7 +32,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 2rem;
+  /*justify-content: center;*/
   background-color: var(--side-color);
 }
 
@@ -84,8 +85,71 @@ body {
 }
 
 .spc {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+
+.button {
+  display: inherit;
+  padding: 1.2rem 2rem;
+  background-color: var(--bg);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.button .btn-number {
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+.card-container {
+  padding-top: 6rem !important;
+}
+
+.card-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.bd-radius {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-body {
+  background-color: var(--bg);
+  color: white;
+}
+
+.card-text {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+}
+
