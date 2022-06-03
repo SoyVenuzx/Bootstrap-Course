@@ -3,6 +3,7 @@
   --side-color: #fa9e2c;
   --dark: #2f2f2f;
   --princ-font: 'Open Sans', sans-serif;
+  --yellow: #fa9e2c;
 }
 
 html {
@@ -12,13 +13,15 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit; /* Snippet box sizing */
+  box-sizing: inherit;
+  /* Snippet box sizing */
 }
 
 body {
+  width: 100%;
+  max-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: var(--princ-font);
   color: var(--dark);
 }
@@ -169,3 +172,24 @@ body {
   height: 200px;
 }
 
+.tit-yellow {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+.container-hab {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-hab {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-end {
+  text-align: end !important;
+}
